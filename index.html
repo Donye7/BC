@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blue Circle</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1><img src="logo.svg" alt="Framable" id="logo">Framable</h1>
+        </header>
+        <main>
+            <div class="upload-area">
+                <input type="file" id="photo-upload" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                <label for="photo-upload">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+                            <circle cx="25" cy="25" r="20" stroke="blue" stroke-width="3" fill="transparent" />
+                        </svg>
+                    </figure> 
+                    <span>Choose a file&hellip;</span>
+                </label>
+            </div>
+            <!-- Add search field and category filter -->
+<div class="frame-gallery-filters">
+    <input type="text" id="search-field" placeholder="Search frames...">
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <!-- Add more categories as needed -->
+    </select>
+  </div>
+  
+  <!-- Add a separate section for trending frames -->
+  <div class="trending-frames">
+    <h2>Trending Frames</h2>
+    <!-- You would populate this section with your top 10 trending frames -->
+  </div>
+            <div class="frame-select">
+                <h2>Select a Frame</h2>
+                <div class="frames">
+                    <div class="frame-option">
+                        <img src="frames/black.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/blue.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/brown.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/fg.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/green.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/orange.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/pink.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/purple.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/red.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/white.png" alt="Frame 1">
+                    </div>
+                    <div class="frame-option">
+                        <img src="frames/yellow.png" alt="Frame 1">
+                    </div>
+                </div>
+            </div>
+            <div class="frame-preview">
+                <img id="user-photo" src="" alt="Your photo">
+                <img id="frame-image" src="" alt="Your frame">
+            </div>
+            <button id="generate-frame">Generate Frame</button>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
